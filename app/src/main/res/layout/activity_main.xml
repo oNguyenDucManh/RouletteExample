@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.manhnd.demo.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:rotation="180"
+        app:srcCompat="?android:attr/textSelectHandle" />
+
+    <com.manhnd.demo.wheelview.WheelView
+        android:id="@+id/wheel_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        app:emptyItemColor="@color/green_900"
+        app:repeatItems="true"
+        app:rotatableWheelDrawable="false"
+        app:selectionColor="@color/teal_900"
+        app:wheelColor="@color/grey_400"
+        app:wheelDrawable="@drawable/bg_roulette"
+        app:wheelItemCount="6"
+        app:wheelItemRadius="@dimen/wheel_item_radius"
+        app:wheelRadius="@dimen/wheel_radius" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wheel_view"
+        android:layout_margin="@dimen/margin_20dp"
+        android:text="START" />
+</RelativeLayout>
