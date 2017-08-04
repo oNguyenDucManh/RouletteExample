@@ -318,4 +318,11 @@
     <color name="bg_coupon_prize">#6BD4BE</color>
     <color name="bg_coupon_basic">#94DB97</color>
     <color name="bg_coupon_miss">#d5d5d5</color>
+
+    <color name="item_roulette_1">#ffe575</color>
+    <color name="item_roulette_2">#AADEF9</color>
+    <color name="item_roulette_3">#FFB9D1</color>
+    <color name="item_roulette_4">#FF8897</color>
+    <color name="item_roulette_5">#AFE087</color>
+    <color name="item_roulette_6">#FEA974</color>
 </resources>

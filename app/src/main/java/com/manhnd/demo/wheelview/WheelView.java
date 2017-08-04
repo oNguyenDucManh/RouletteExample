@@ -714,7 +714,7 @@ public class WheelView extends View {
         }
 
         if (mWheelToItemDistance == ViewGroup.LayoutParams.MATCH_PARENT) {
-            mWheelToItemDistance = (int) (mWheelBounds.mRadius - mItemRadius);
+            mWheelToItemDistance = (int) (mWheelBounds.mRadius - mItemRadius - mWheelPadding);
         }
 
         float itemAngleRadians = (float) Math.toRadians(mItemAngle);
@@ -1171,10 +1171,10 @@ public class WheelView extends View {
                 Drawable drawable = cacheItem.mDrawable;
                 if (drawable != null) {
 
-                    int left = mViewBounds.centerX()- mWheelRadius;
+                    int left = mViewBounds.centerX() - mWheelRadius;
                     int right = mViewBounds.centerX() + mWheelRadius;
-                    int top = 0;
-                    int bottom = (right - left);
+                    int top = 0 + mWheelPadding;
+                    int bottom = (right - left) - mWheelPadding;
                     Rect bound = new Rect(left, top, right, bottom);
                     drawable.setBounds(bound);
                     drawable.draw(canvas);

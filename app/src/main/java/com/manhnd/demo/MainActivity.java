@@ -99,22 +99,22 @@ public class MainActivity extends AppCompatActivity {
 
             switch (position) {
                 case 0:
-                    color = mContext.getResources().getColor(R.color.bg_coupon_basic);
+                    color = mContext.getResources().getColor(R.color.item_roulette_1);
                     break;
                 case 1:
-                    color = mContext.getResources().getColor(R.color.bg_coupon_data);
+                    color = mContext.getResources().getColor(R.color.item_roulette_2);
                     break;
                 case 2:
-                    color = mContext.getResources().getColor(R.color.bg_coupon_prize);
+                    color = mContext.getResources().getColor(R.color.item_roulette_3);
                     break;
                 case 3:
-                    color = mContext.getResources().getColor(R.color.bg_coupon_vas);
+                    color = mContext.getResources().getColor(R.color.item_roulette_4);
                     break;
                 case 4:
-                    color = mContext.getResources().getColor(R.color.bg_coupon_miss);
+                    color = mContext.getResources().getColor(R.color.item_roulette_5);
                     break;
                 case 5:
-                    color = mContext.getResources().getColor(R.color.blue_grey_900);
+                    color = mContext.getResources().getColor(R.color.item_roulette_6);
                     break;
                 case 6:
                     color = mContext.getResources().getColor(R.color.deep_orange_a700);
